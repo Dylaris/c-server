@@ -9,6 +9,8 @@ This project is implemented in C, based on what I learned from two C++ projects:
 ```console
 $ gcc -o build build.c
 $ ./build
+$ ./test/server &
+$ ./test/client
 ```
 
 ## Reference

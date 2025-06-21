@@ -1,4 +1,5 @@
 build
-src/client
-src/build
-src/server
+src/*.o
+src/*.a
+test/client
+test/server

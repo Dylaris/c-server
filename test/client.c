@@ -3,19 +3,13 @@
 #include <string.h>
 
 #include <unistd.h>
-#include <sys/types.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
 
+#include "util.h"
+
 #define HOST "127.0.0.1" 
 #define PORT 9190
-
-#define fatal(fmt, ...)                                 \
-    do {                                                \
-        fprintf(stderr, "Client: "fmt" at <%s:%d>\n",   \
-            ##__VA_ARGS__, __FILE__, __LINE__);         \
-        exit(1);                                        \
-    } while (0)
 
 int main(void)
 {
